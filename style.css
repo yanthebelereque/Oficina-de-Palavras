@@ -759,3 +759,40 @@ form button:hover {
         padding: 0 5% 60px;
     }
 }
+
+/* Ajustes responsivos gerais: celular, tablet e computador */
+html { width: 100%; overflow-x: hidden; }
+body { width: 100%; min-width: 0; overflow-wrap: break-word; }
+img, canvas, video, iframe { max-width: 100%; }
+button, input, textarea, select { max-width: 100%; }
+.header { gap: 18px; flex-wrap: wrap; }
+.logo { flex-shrink: 0; }
+.nav { flex-wrap: wrap; justify-content: flex-end; row-gap: 10px; }
+.hero { min-width: 0; }
+.hero-text, .carousel, .project-content, .cards, .objective-content, .text-blocks, .section-title, .text-block, .info-box, .card { min-width: 0; }
+.tag { white-space: normal; }
+
+/* Página de mensuração */
+.evaluation { width: min(1100px, 100%); margin: 0 auto; padding: 48px clamp(16px, 5vw, 64px) 60px; }
+.tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 0 auto 28px; }
+.tab { border: 1px solid #dbe3ee; border-radius: 999px; padding: 11px 18px; background: #f8fafc; color: #374151; font: inherit; font-weight: 700; cursor: pointer; transition: background .2s ease, color .2s ease; }
+.tab:hover, .tab.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+.tab:focus-visible { outline: 3px solid #93c5fd; outline-offset: 3px; }
+.tab-content { display: none; width: 100%; padding: clamp(18px, 3vw, 32px); border: 1px solid #e8edf4; border-radius: 18px; background: #fff; box-shadow: 0 10px 30px rgba(23, 32, 51, .06); }
+.tab-content.active { display: block; }
+.tab-content h2 { margin: 0 0 10px; color: #172033; font-size: clamp(22px, 3vw, 30px); line-height: 1.25; }
+.tab-content p { margin: 0 0 22px; color: #68737d; }
+.chart-container { position: relative; width: 100%; height: clamp(260px, 42vw, 390px); max-height: 390px; }
+.chart-container canvas { display: block; width: 100% !important; height: 100% !important; }
+@media (max-width: 1000px) { .header { justify-content: center; padding: 16px 5%; } .nav { justify-content: center; } .hero { gap: 35px; } .objective-content { gap: 30px; } .evaluation { padding-top: 35px; } }
+@media (max-width: 650px) {
+ h1 { font-size: clamp(28px, 8vw, 36px) !important; }
+ .header { position: relative; padding: 16px 4%; } .logo { text-align: center; font-size: 22px; } .nav { width: 100%; gap: 8px 14px; } .nav a { font-size: 14px; }
+ .hero { min-height: auto; padding: 42px 5%; } .hero-text h1 { font-size: clamp(30px, 8vw, 38px) !important; } .hero-buttons { flex-wrap: wrap; } .hero-buttons .btn { width: 100%; max-width: 320px; }
+ .section { padding: 48px 5%; } .section-title { margin-bottom: 30px; } .section-title h2, .highlight h2 { font-size: clamp(25px, 7vw, 32px); }
+ .project-content, .cards, .objective-content, .text-blocks { grid-template-columns: minmax(0, 1fr); } .info-box, .card, .text-block { padding: 24px 18px; }
+ .page-intro { padding: 48px 5% 35px; } .page-intro h1 { font-size: clamp(28px, 8vw, 36px) !important; } .page-carousel { padding: 30px 5%; }
+ .inner-carousel, .carousel { height: clamp(210px, 62vw, 300px); } .text-blocks { padding: 20px 5% 45px; } .page-back { padding: 0 5% 45px; } .footer { padding: 28px 5%; }
+ .evaluation { padding: 28px 5% 42px; } .tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; } .tab { width: 100%; padding: 10px 7px; border-radius: 12px; font-size: 14px; } .tab-content { padding: 18px 14px; } .chart-container { height: 300px; }
+}
+@media (max-width: 360px) { .tabs { grid-template-columns: 1fr; } .nav { gap: 8px 10px; } .nav a { font-size: 13px; } .chart-container { height: 270px; } }

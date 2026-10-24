@@ -42,7 +42,7 @@
             Contato
         </a>
 
-        <a href="mensuração.html">
+        <a href="mensuracao.html">
             Mensuração
         </a>
 
@@ -76,19 +76,19 @@
 
         <div class="tabs">
 
-            <button class="tab active" onclick="mostrarAba('leitura')">
+            <button type="button" role="tab" aria-selected="true" class="tab active" onclick="mostrarAba('leitura', this)">
                 Leitura
             </button>
 
-            <button class="tab" onclick="mostrarAba('oralidade')">
+            <button type="button" role="tab" aria-selected="false" class="tab" onclick="mostrarAba('oralidade', this)">
                 Oralidade
             </button>
 
-            <button class="tab" onclick="mostrarAba('criatividade')">
+            <button type="button" role="tab" aria-selected="false" class="tab" onclick="mostrarAba('criatividade', this)">
                 Criatividade
             </button>
 
-            <button class="tab" onclick="mostrarAba('socioemocional')">
+            <button type="button" role="tab" aria-selected="false" class="tab" onclick="mostrarAba('socioemocional', this)">
                 Socioemocional
             </button>
 
@@ -234,24 +234,18 @@
 
 <script>
 
-function mostrarAba(nomeAba) {
-
+function mostrarAba(nomeAba, botaoClicado) {
     const conteudos = document.querySelectorAll(".tab-content");
     const botoes = document.querySelectorAll(".tab");
-
-    conteudos.forEach(function(conteudo) {
-        conteudo.classList.remove("active");
+    conteudos.forEach(function (conteudo) {
+        conteudo.classList.toggle("active", conteudo.id === nomeAba);
     });
-
-    botoes.forEach(function(botao) {
-        botao.classList.remove("active");
+    botoes.forEach(function (botao) {
+        const ativo = botao === botaoClicado;
+        botao.classList.toggle("active", ativo);
+        botao.setAttribute("aria-selected", ativo ? "true" : "false");
     });
-
-    document.getElementById(nomeAba).classList.add("active");
-
-    event.currentTarget.classList.add("active");
 }
-
 
 const graficoLeitura = new Chart(
     document.getElementById("graficoLeitura"),
