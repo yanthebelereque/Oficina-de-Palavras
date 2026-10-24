@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roda de leitura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+             Oficina de Palavras
+    </div>
+
+<nav class="nav">
+    <a href="site.html#inicio">Início</a>
+    <a href="site.html#projeto">O Projeto</a>
+    <a href="site.html#atividades">Atividades</a>
+    <a href="site.html#objetivos">Objetivos</a>
+    <a href="site.html#contato">Contato</a>
+    <a href="mensuracao.html" target="_blank">Mensuração</a>
+     
+</nav>
+
+
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+
+    <div class="hero-text">
+
+        <span class="tag">
+            LER • DESCOBRIR • TRANSFORMAR
+        </span>
+
+        <h1>
+            Aprender pode ser uma experiência divertida!
+        </h1>
+
+        <p>
+            Formar uma criança capaz de ler, compreender, questionar, imaginar, criar e se posicionar, atribuindo 
+            sentidos e significados ao mundo que a cerca e reconhecendo-se como parte ativa na construção de sua própria
+             história.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projeto" class="btn">
+                Conheça o projeto
+            </a>
+
+            <a href="#atividades" class="btn btn-outline">
+                Ver atividades
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="carousel">
+
+        <div class="slide active">
+            <img src="fotos/imagem 1.jpg" alt="Crianças participando de uma atividade">
+        </div>
+
+        <div class="slide">
+            <img src="fotos/imagem 2.jpg" alt="Crianças realizando atividade">
+        </div>
+
+        <div class="slide">
+            <img src="fotos/imagem 3.jpg" alt="Crianças aprendendo">
+        </div>
+
+        <div class="slide">
+            <img src="fotos/imagem 4.jpg" alt="Atividade educativa">
+        </div>
+
+        <div class="slide">
+            <img src="fotos/imagem 5.jpg" alt="Crianças em atividade">
+        </div>
+
+        <button class="carousel-button prev" onclick="mudarSlide(-1)">
+            &#10094;
+        </button>
+
+        <button class="carousel-button next" onclick="mudarSlide(1)">
+            &#10095;
+        </button>
+
+        <div class="indicators">
+
+            <span class="indicator active" onclick="irParaSlide(0)"></span>
+            <span class="indicator" onclick="irParaSlide(1)"></span>
+            <span class="indicator" onclick="irParaSlide(2)"></span>
+            <span class="indicator" onclick="irParaSlide(3)"></span>
+            <span class="indicator" onclick="irParaSlide(4)"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section project" id="projeto">
+
+    <div class="section-title">
+
+        <span class="small-title">
+            SOBRE O PROJETO
+        </span>
+
+        <p>
+        Ajudar as crianças a reconhecerem e construírem sua própria identidade, desenvolvendo o senso crítico e 
+        ampliando suas perspectivas sobre o mundo. Por meio de livros, músicas, cantigas, histórias e conversas, 
+        buscamos ampliar seu repertório cultural e proporcionar diferentes formas de conhecer, interpretar e compreender 
+        a realidade, formando sujeitos capazes de olhar para além de seu próprio contexto
+        </p>
+
+    </div>
+
+    <div class="project-content">
+
+        <div class="info-box">
+            <div class="icon">📚</div>
+
+            <h3>
+                Aprendizagem
+            </h3>
+
+            <p>
+                Desenvolver habilidades essenciais para a aprendizagem
+                por meio de experiências significativas.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <div class="icon">💡</div>
+
+            <h3>
+                Criatividade
+            </h3>
+
+            <p>
+                Estimular a curiosidade, a investigação e a descoberta
+                por meio de atividades divertidas.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <div class="icon">🤝</div>
+
+            <h3>
+                Oralidade
+            </h3>
+
+            <p>
+                Incentivar a participação, a troca de ideias e
+                o trabalho em equipe.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section activities" id="atividades">
+
+    <div class="section-title">
+
+       
+
+        <h2>
+            Aprender fazendo
+        </h2>
+
+
+    </div>
+
+    <div class="cards">
+
+        <a href="leitura.html" class="card blue">
+
+            <div class="card-icon">📖</div>
+
+            <h3>
+                Leitura
+            </h3>
+
+            <p>
+                Atividades que estimulam o gosto pela leitura,
+                interpretação e compreensão.
+            </p>
+
+            <span class="card-link">
+                Saiba mais →
+            </span>
+
+        </a>
+
+        <a href="escrita.html" class="card yellow">
+
+            <div class="card-icon">✏️</div>
+
+            <h3>
+                Solicitude
+            </h3>
+
+            <p>
+               Cuidado, atenção e esforço pleno para atender as dificuldades
+               fisicas e morais.
+            </p>
+
+            <span class="card-link">
+                Saiba mais →
+            </span>
+
+        </a>
+
+        <a href="oralidade.html" class="card pink">
+
+            <div class="card-icon">🗣️</div>
+
+            <h3>
+                Oralidade
+            </h3>
+
+            <p>
+                Conversas, apresentações e momentos de troca
+                que desenvolvem a comunicação.
+            </p>
+
+            <span class="card-link">
+                Saiba mais →
+            </span>
+
+        </a>
+
+        <a href="pensamento-logico.html" class="card green">
+
+            <div class="card-icon">🧩</div>
+
+            <h3>
+                Socioemocional
+            </h3>
+
+            <p>
+                Jogos e desafios que estimulam o raciocínio,
+                a criatividade e a resolução de problemas.
+            </p>
+
+            <span class="card-link">
+                Saiba mais →
+            </span>
+
+        </a>
+
+    </div>
+
+</section>
+
+<section class="section objectives" id="objetivos">
+
+    <div class="section-title">
+
+        <span class="small-title">
+            OBJETIVO
+        </span>
+
+        <h2>
+            O que queremos desenvolver?
+        </h2>
+
+    </div>
+
+    <div class="objective-content">
+
+        <div class="objective-text">
+
+            <p>
+                Uma leitura que atravessa múltiplas linguagens, despertando sentidos, 
+                potencialidades e descobertas para desenvolver a criança de forma integral e interdimensional.
+            </p>
+
+            <p>
+                A proposta integra diferentes áreas do conhecimento, proporcionando experiências que revelam como
+                 a criança já lê e interpreta o mundo por meio de múltiplas linguagens. Ela lê com o corpo, com os sons, 
+                com as imagens, com os gestos, com os movimentos, com a arte e com suas próprias experiências, 
+                ampliando, a cada descoberta, suas formas de compreender, expressar e transformar o mundo ao seu redor.
+            </p>
+
+        </div>
+
+        <div class="objective-list">
+
+            <div>
+                <span>✓</span>
+                Ampliação do vocabulário
+            </div>
+
+            <div>
+                <span>✓</span>
+                Desenvolvimento do raciocínio
+            </div>
+
+            <div>
+                <span>✓</span>
+                Concentração
+            </div>
+
+            <div>
+                <span>✓</span>
+                Memória
+            </div>
+
+            <div>
+                <span>✓</span>
+                Leitura de mundo
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="highlight">
+
+    <div>
+
+        <h2>
+            Cada atividade é uma nova oportunidade para aprender.
+        </h2>
+
+        <p>
+            Explorar, criar, questionar, compartilhar e descobrir.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section contact" id="contato">
+
+    <div class="section-title">
+
+        <span class="small-title">
+            CONTATO
+        </span>
+
+        <h2>
+            Fale conosco
+        </h2>
+
+        <p>
+            Entre em contato para saber mais sobre o projeto.
+        </p>
+
+    </div>
+
+    <form>
+
+        <input type="text" placeholder="Seu nome" required>
+
+        <input type="email" placeholder="Seu e-mail" required>
+
+        <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+
+        <button type="submit">
+            Enviar mensagem
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        Aprender Brincando
+    </div>
+
+    <p>
+        Educação, criatividade e aprendizagem.
+    </p>
+
+    <span>
+        © 2026 Todos os direitos reservados.
+    </span>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
