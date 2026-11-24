@@ -77,18 +77,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         slidesInternos.forEach(function (slide, index) {
-
-            slide.classList.remove("active");
-
-            if (index === slideInternoAtual) {
-                slide.classList.add("active");
-            }
-
+            slide.classList.toggle("active", index === slideInternoAtual);
+        });
+        document.querySelectorAll(".gallery-dot").forEach(function (dot, index) {
+            dot.classList.toggle("active", index === slideInternoAtual);
         });
     }
 
     window.mudarSlideInterno = function (direcao) {
         mostrarSlideInterno(slideInternoAtual + direcao);
+    };
+    window.irParaSlideInterno = function (numero) {
+        mostrarSlideInterno(numero);
     };
 
     if (slidesInternos.length > 0) {

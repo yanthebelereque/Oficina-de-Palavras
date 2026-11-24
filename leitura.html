@@ -1,144 +1,234 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leitura - Aprender Brincando</title>
+    <meta name="description" content="A leitura aproxima as crianças de novas histórias, ideias e formas de perceber o mundo. Por meio de livros, imagens, conversas e situações do cotidiano, cada experiência amplia o repertório, fortalece a compreensão e desperta o prazer de aprender.">
+    <title>Leitura | Oficina de Palavras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="header">
+    <a class="logo" href="site.html#inicio">Oficina de Palavras</a>
 
-    <div class="logo">
-              Oficina de Palavras
-
-    </div>
-
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegação principal">
         <a href="site.html#inicio">Início</a>
         <a href="site.html#projeto">O Projeto</a>
         <a href="site.html#atividades">Atividades</a>
         <a href="site.html#objetivos">Objetivos</a>
-        <a href="site.html#contato">Contato</a>
-        <a href="site.html#mensuração">Mensuração</a>
+        <a href="mensuracao.html">Mensuração</a>
+        <a href="coparticipacao.html">Coparticipação</a>
     </nav>
-
 </header>
 
-<main>
+<main class="topic-page">
+    <section class="topic-hero">
+        <div class="hero-copy">
+            <span class="eyebrow">LEITURA • IMAGINAÇÃO • CONHECIMENTO</span>
 
-<section class="page-intro">
+            <h1>
+                Ler é abrir caminhos para imaginar, compreender e descobrir.
+            </h1>
 
-    <span class="small-title">
-        LEITURA
-    </span>
+            <p>
+                A leitura aproxima as crianças de novas histórias, ideias e formas de perceber o mundo. Por
+                meio de livros, imagens, conversas e situações do cotidiano, cada experiência amplia o
+                repertório, fortalece a compreensão e desperta o prazer de aprender.
+            </p>
 
-    <h1>
-        Descobrindo novas histórias
-    </h1>
-
-    <p>
-        A leitura é uma forma divertida de conhecer novas histórias,
-        personagens e diferentes maneiras de enxergar o mundo.
-    </p>
-
-</section>
-
-<section class="page-carousel">
-
-    <div class="inner-carousel">
-
-        <div class="inner-slide active">
-            <img src="fotos/lei 1.jpeg" alt="Atividade de leitura">
+            <a class="hero-cta" href="#experiencias">
+                Conheça as experiências
+                <span>↓</span>
+            </a>
         </div>
 
-        
-        <div class="inner-slide active">
-            <img src="fotos/lei 2.jpg" alt="Atividade de leitura">
+        <figure class="hero-photo">
+            <!--
+                PARA COLOCAR SUA FOTO:
+                1) copie a imagem para a pasta "fotos"
+                2) apague o bloco <div class="hero-photo-empty"> abaixo
+                3) remova as marcas de comentário da linha <img> e troque o nome do arquivo
+            -->
+            <!-- <img src="fotos/NOME-DA-FOTO.jpg" alt="Crianças participando de uma roda de leitura" loading="lazy"> -->
+            <div class="hero-photo-empty">
+                <span>📷</span>
+                <strong>Espaço para sua foto</strong>
+                <small>Adicione uma imagem da pasta fotos</small>
+            </div>
+
+            <span class="hero-photo-mark">01</span>
+
+            <figcaption>
+                <p>
+                    Curiosidade que vira descoberta
+                </p>
+                <span>OFICINA DE PALAVRAS</span>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="topic-overview">
+        <div>
+            <h2>
+                Aprender é uma experiência construída em conjunto.
+            </h2>
         </div>
-
-
-    
-        <div class="inner-slide active">
-            <img src="fotos/lei 3.jpg" alt="Atividade de leitura">
-        </div>
-
-         
-    
-
-        <button class="inner-button prev" onclick="mudarSlideInterno(-1)">
-            &#10094;
-        </button>
-
-        <button class="inner-button next" onclick="mudarSlideInterno(1)">
-            &#10095;
-        </button>
-
-    </div>
-
-</section>
-
-<section class="text-blocks">
-
-    <div class="text-block">
-
-        <h2>
-            Ler e imaginar
-        </h2>
 
         <p>
-            As atividades de leitura incentivam as crianças a conhecer
-            histórias, personagens e diferentes situações. Durante as
-            atividades, elas podem imaginar novos finais, identificar
-            personagens e compartilhar suas próprias interpretações.
+            Quando a criança tem espaço para perguntar, imaginar e contar o que percebeu, a leitura deixa de
+            ser apenas uma atividade e se transforma em uma experiência de descoberta.
         </p>
+    </section>
 
+    <section class="features-section" id="experiencias">
+        <div class="section-heading">
+            <h2>
+                O que desenvolvemos
+            </h2>
+        </div>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <span class="feature-number">01</span>
+                <div class="feature-icon">📖</div>
+                <h3>
+                    Imaginação e criatividade
+                </h3>
+                <p>
+                    Histórias convidam a criar cenários, imaginar personagens, antecipar acontecimentos e
+                    inventar outros finais. A criança compartilha interpretações e percebe que uma mesma
+                    narrativa pode despertar diferentes ideias.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">02</span>
+                <div class="feature-icon">🔎</div>
+                <h3>
+                    Compreensão e interpretação
+                </h3>
+                <p>
+                    As propostas estimulam a observação de detalhes, a identificação de informações, a
+                    elaboração de hipóteses e a construção de sentidos. A criança aprende a relacionar pistas
+                    do texto e das imagens para compreender o que lê.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">03</span>
+                <div class="feature-icon">💬</div>
+                <h3>
+                    Vocabulário e expressão
+                </h3>
+                <p>
+                    O contato com palavras novas enriquece o vocabulário. Conversar sobre personagens,
+                    acontecimentos e sentimentos ajuda a organizar pensamentos e comunicar descobertas.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">04</span>
+                <div class="feature-icon">🌎</div>
+                <h3>
+                    Leitura do mundo
+                </h3>
+                <p>
+                    Ler também é interpretar imagens, símbolos, placas, ilustrações, brincadeiras e situações
+                    cotidianas. Essas experiências aproximam a leitura da realidade da criança e valorizam
+                    seus conhecimentos prévios.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <div class="section-heading">
+            <h2>
+                Como essa aprendizagem acontece
+            </h2>
+        </div>
+
+        <div class="detail-grid">
+            <article class="detail-card">
+                <h3>
+                    Antes, durante e depois da leitura
+                </h3>
+                <p>
+                    A atividade pode começar com a exploração da capa, do título e das ilustrações. Durante a
+                    história, perguntas abertas convidam a prever acontecimentos e observar detalhes. Depois,
+                    a conversa, o desenho ou a dramatização ajudam a reconstruir e compartilhar os sentidos
+                    produzidos.
+                </p>
+            </article>
+
+            <article class="detail-card">
+                <h3>
+                    Mediação que acolhe diferentes interpretações
+                </h3>
+                <p>
+                    O educador apresenta materiais variados, escuta as hipóteses das crianças e faz perguntas
+                    que ampliam a reflexão. Não se busca uma única resposta, mas condições para que cada
+                    participante argumente, relacione ideias e construa sua compreensão.
+                </p>
+            </article>
+
+            <article class="detail-card">
+                <h3>
+                    Autonomia e vínculo com a leitura
+                </h3>
+                <p>
+                    A escolha de livros, a exploração livre dos materiais e os momentos de leitura
+                    compartilhada favorecem a autonomia. O contato frequente e prazeroso com histórias
+                    contribui para que a criança desenvolva interesse e confiança para se aproximar da
+                    linguagem escrita.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-heading">
+            <h2>
+                Aprendizagens que acontecem na prática
+            </h2>
+        </div>
+
+        <div class="inner-carousel">
+            <div class="inner-slide active">
+                <img src="fotos/lei%201.jpeg" alt="Crianças participando de uma atividade de leitura" loading="lazy">
+            </div>
+            <div class="inner-slide">
+                <img src="fotos/lei%202.jpg" alt="Registro de experiência de leitura" loading="lazy">
+            </div>
+            <div class="inner-slide">
+                <img src="fotos/lei%203.jpg" alt="Momento de descoberta por meio da leitura" loading="lazy">
+            </div>
+            <button class="inner-button prev" type="button" onclick="mudarSlideInterno(-1)" aria-label="Imagem anterior">
+                ❮
+            </button>
+            <button class="inner-button next" type="button" onclick="mudarSlideInterno(1)" aria-label="Próxima imagem">
+                ❯
+            </button>
+        </div>
+
+        <div class="gallery-dots">
+            <button class="gallery-dot active" type="button" onclick="irParaSlideInterno(0)" aria-label="Ver imagem 1"></button>
+            <button class="gallery-dot" type="button" onclick="irParaSlideInterno(1)" aria-label="Ver imagem 2"></button>
+            <button class="gallery-dot" type="button" onclick="irParaSlideInterno(2)" aria-label="Ver imagem 3"></button>
+        </div>
+    </section>
+
+    <div class="topic-back">
+        <a href="site.html#atividades">← Voltar para todas as atividades</a>
     </div>
-
-    <div class="text-block">
-
-        <h2>
-            Aprender com as histórias
-        </h2>
-
-        <p>
-            Por meio da leitura, as crianças desenvolvem a compreensão,
-            ampliam o vocabulário e aprendem a expressar suas ideias.
-            Cada história pode se transformar em uma nova oportunidade
-            para aprender e criar.
-        </p>
-
-    </div>
-
-</section>
-
-<div class="page-back">
-
-    <a href="site.html#atividades" class="btn">
-        ← Voltar para atividades
-    </a>
-
-</div>
-
 </main>
 
 <footer class="footer">
-
-    <div class="footer-logo">
-        Aprender Brincando
-    </div>
-
     <p>
         Educação, criatividade e aprendizagem.
     </p>
-
-    <span>
-        © 2026 Todos os direitos reservados.
-    </span>
-
+    <span>© 2026 Oficina de Palavras.</span>
 </footer>
 
 <script src="script.js"></script>

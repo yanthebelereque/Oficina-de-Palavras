@@ -1,137 +1,239 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pensamento Lógico - Aprender Brincando</title>
+    <meta name="description" content="O desenvolvimento socioemocional acontece nas experiências do cotidiano. Ao reconhecer sentimentos, compreender o outro, fazer escolhas e enfrentar pequenos desafios, as crianças desenvolvem recursos para conviver, participar e construir relações baseadas no respeito e na cooperação.">
+    <title>Socioemocional | Oficina de Palavras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="header">
+    <a class="logo" href="site.html#inicio">Oficina de Palavras</a>
 
-    <div class="logo">
-              Oficina de Palavras
-
-    </div>
-
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegação principal">
         <a href="site.html#inicio">Início</a>
         <a href="site.html#projeto">O Projeto</a>
         <a href="site.html#atividades">Atividades</a>
         <a href="site.html#objetivos">Objetivos</a>
-        <a href="site.html#contato">Contato</a>
-        <a href="site.html#mensuração">Mensuração</a>
+        <a href="mensuracao.html">Mensuração</a>
+        <a href="coparticipacao.html">Coparticipação</a>
     </nav>
-
 </header>
 
-<main>
+<main class="topic-page">
+    <section class="topic-hero">
+        <div class="hero-copy">
+            <span class="eyebrow">AUTOCONHECIMENTO • EMPATIA • CONVIVÊNCIA</span>
 
-<section class="page-intro">
+            <h1>
+                Socioemocional: reconhecer emoções e construir relações saudáveis.
+            </h1>
 
-    <span class="small-title">
-        PENSAMENTO LÓGICO
-    </span>
+            <p>
+                O desenvolvimento socioemocional acontece nas experiências do cotidiano. Ao reconhecer
+                sentimentos, compreender o outro, fazer escolhas e enfrentar pequenos desafios, as crianças
+                desenvolvem recursos para conviver, participar e construir relações baseadas no respeito e na
+                cooperação.
+            </p>
 
-    <h1>
-        Desafiar, pensar e resolver
-    </h1>
-
-    <p>
-        O pensamento lógico ajuda as crianças a observar,
-        comparar, criar estratégias e encontrar soluções
-        para diferentes desafios.
-    </p>
-
-</section>
-
-<section class="page-carousel">
-
-    <div class="inner-carousel">
-
-        <div class="inner-slide active">
-            <img src="fotos/imagem 1.jpg" alt="Atividade de pensamento lógico">
+            <a class="hero-cta" href="#experiencias">
+                Conheça as experiências
+                <span>↓</span>
+            </a>
         </div>
 
-        <div class="inner-slide">
-            <img src="fotos/imagem 4.jpg" alt="Crianças realizando desafio lógico">
+        <figure class="hero-photo">
+            <!--
+                PARA COLOCAR SUA FOTO:
+                1) copie a imagem para a pasta "fotos"
+                2) apague o bloco <div class="hero-photo-empty"> abaixo
+                3) remova as marcas de comentário da linha <img> e troque o nome do arquivo
+            -->
+            <!-- <img src="fotos/NOME-DA-FOTO.jpg" alt="Crianças em uma atividade socioemocional" loading="lazy"> -->
+            <div class="hero-photo-empty">
+                <span>📷</span>
+                <strong>Espaço para sua foto</strong>
+                <small>Adicione uma imagem da pasta fotos</small>
+            </div>
+
+            <span class="hero-photo-mark">VÍNCULOS</span>
+
+            <figcaption>
+                <p>
+                    Sentir, compreender e conviver
+                </p>
+                <span>OFICINA DE PALAVRAS</span>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="topic-overview">
+        <div>
+            <h2>
+                Aprender é uma experiência construída em conjunto.
+            </h2>
         </div>
-
-        <div class="inner-slide">
-            <img src="fotos/imagem 5.jpg" alt="Atividade de raciocínio">
-        </div>
-
-        <button class="inner-button prev" onclick="mudarSlideInterno(-1)">
-            &#10094;
-        </button>
-
-        <button class="inner-button next" onclick="mudarSlideInterno(1)">
-            &#10095;
-        </button>
-
-    </div>
-
-</section>
-
-<section class="text-blocks">
-
-    <div class="text-block">
-
-        <h2>
-            Pensar e descobrir
-        </h2>
 
         <p>
-            Jogos, brincadeiras e desafios ajudam as crianças a
-            desenvolver o raciocínio, perceber padrões, comparar
-            informações e criar estratégias para solucionar problemas.
+            Desenvolver habilidades socioemocionais não significa evitar conflitos ou emoções difíceis, mas
+            oferecer apoio para que as crianças aprendam a reconhecê-los, expressá-los e construir caminhos de
+            convivência.
         </p>
+    </section>
 
+    <section class="features-section" id="experiencias">
+        <div class="section-heading">
+            <h2>
+                O que desenvolvemos
+            </h2>
+        </div>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <span class="feature-number">01</span>
+                <div class="feature-icon">💗</div>
+                <h3>
+                    Autoconhecimento
+                </h3>
+                <p>
+                    Identificar e nomear emoções ajuda a criança a compreender o que sente e a comunicar suas
+                    necessidades. Histórias, conversas e atividades lúdicas abrem espaço para falar sobre
+                    sentimentos sem julgamentos.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">02</span>
+                <div class="feature-icon">🌱</div>
+                <h3>
+                    Autorregulação
+                </h3>
+                <p>
+                    Com apoio dos adultos, a criança aprende estratégias para lidar com frustrações, esperar,
+                    pedir ajuda e retomar uma atividade. Esse processo é gradual e considera a idade, o
+                    contexto e as necessidades de cada participante.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">03</span>
+                <div class="feature-icon">🤲</div>
+                <h3>
+                    Empatia e respeito
+                </h3>
+                <p>
+                    Perceber que outras pessoas podem sentir e pensar de maneiras diferentes amplia a
+                    capacidade de acolher, respeitar limites e reconhecer necessidades. Atitudes de cuidado e
+                    gentileza são valorizadas nas interações.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-number">04</span>
+                <div class="feature-icon">🧩</div>
+                <h3>
+                    Autonomia e cooperação
+                </h3>
+                <p>
+                    Fazer escolhas, participar de combinados, organizar materiais e colaborar em tarefas
+                    coletivas fortalece a responsabilidade e a confiança. A criança aprende que suas ações têm
+                    impacto no grupo.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <div class="section-heading">
+            <h2>
+                Como essa aprendizagem acontece
+            </h2>
+        </div>
+
+        <div class="detail-grid">
+            <article class="detail-card">
+                <h3>
+                    Acolher emoções para construir confiança
+                </h3>
+                <p>
+                    O primeiro passo é reconhecer o sentimento e oferecer escuta. O adulto ajuda a nomear a
+                    emoção e a pensar em formas seguras e respeitosas de expressá-la. O acolhimento cria
+                    condições para aprender a lidar com situações difíceis.
+                </p>
+            </article>
+
+            <article class="detail-card">
+                <h3>
+                    Conflitos como oportunidades de aprendizagem
+                </h3>
+                <p>
+                    Desentendimentos fazem parte da convivência. Com mediação, as crianças podem contar o que
+                    aconteceu, ouvir os envolvidos, reconhecer necessidades e construir soluções. O foco está
+                    em reparar relações e desenvolver habilidades de diálogo.
+                </p>
+            </article>
+
+            <article class="detail-card">
+                <h3>
+                    Práticas cotidianas que fortalecem o grupo
+                </h3>
+                <p>
+                    Jogos cooperativos, tarefas compartilhadas, histórias sobre sentimentos e momentos de
+                    reflexão ajudam a exercitar empatia e colaboração. A constância dessas experiências
+                    permite que atitudes de respeito e cuidado façam parte da rotina.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-heading">
+            <h2>
+                Aprendizagens que acontecem na prática
+            </h2>
+        </div>
+
+        <div class="inner-carousel">
+            <div class="inner-slide active">
+                <img src="fotos/pens%201.jpg" alt="Atividade de convivência e desenvolvimento" loading="lazy">
+            </div>
+            <div class="inner-slide">
+                <img src="fotos/pens%202.jpg" alt="Crianças participando de uma experiência coletiva" loading="lazy">
+            </div>
+            <div class="inner-slide">
+                <img src="fotos/pens%203.jpg" alt="Vivência de aprendizagem socioemocional" loading="lazy">
+            </div>
+            <div class="inner-slide">
+                <img src="fotos/pens%204.jpg" alt="Momento de interação entre participantes" loading="lazy">
+            </div>
+            <button class="inner-button prev" type="button" onclick="mudarSlideInterno(-1)" aria-label="Imagem anterior">
+                ❮
+            </button>
+            <button class="inner-button next" type="button" onclick="mudarSlideInterno(1)" aria-label="Próxima imagem">
+                ❯
+            </button>
+        </div>
+
+        <div class="gallery-dots">
+            <button class="gallery-dot active" type="button" onclick="irParaSlideInterno(0)" aria-label="Ver imagem 1"></button>
+            <button class="gallery-dot" type="button" onclick="irParaSlideInterno(1)" aria-label="Ver imagem 2"></button>
+            <button class="gallery-dot" type="button" onclick="irParaSlideInterno(2)" aria-label="Ver imagem 3"></button>
+            <button class="gallery-dot" type="button" onclick="irParaSlideInterno(3)" aria-label="Ver imagem 4"></button>
+        </div>
+    </section>
+
+    <div class="topic-back">
+        <a href="site.html#atividades">← Voltar para todas as atividades</a>
     </div>
-
-    <div class="text-block">
-
-        <h2>
-            Resolver desafios
-        </h2>
-
-        <p>
-            As atividades estimulam a curiosidade e permitem que
-            as crianças testem diferentes possibilidades. Dessa forma,
-            elas aprendem a pensar, experimentar e encontrar soluções.
-        </p>
-
-    </div>
-
-</section>
-
-<div class="page-back">
-
-    <a href="site.html#atividades" class="btn">
-        ← Voltar para atividades
-    </a>
-
-</div>
-
 </main>
 
 <footer class="footer">
-
-    <div class="footer-logo">
-        Aprender Brincando
-    </div>
-
     <p>
         Educação, criatividade e aprendizagem.
     </p>
-
-    <span>
-        © 2026 Todos os direitos reservados.
-    </span>
-
+    <span>© 2026 Oficina de Palavras.</span>
 </footer>
 
 <script src="script.js"></script>

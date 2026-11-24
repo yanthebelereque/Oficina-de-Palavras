@@ -1,445 +1,269 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Mensuração - Oficina de Palavras</title>
-
     <link rel="stylesheet" href="style.css">
-
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
 <header class="header">
-
-    <div class="logo">
-        Oficina de Palavras
-    </div>
-
     <nav class="nav">
-
-        <a href="site.html#inicio">
-            Início
-        </a>
-
-        <a href="site.html#projeto">
-            O Projeto
-        </a>
-
-        <a href="site.html#atividades">
-            Atividades
-        </a>
-
-        <a href="site.html#objetivos">
-            Objetivos
-        </a>
-
-        <a href="site.html#contato">
-            Contato
-        </a>
-
-        <a href="mensuracao.html">
-            Mensuração
-        </a>
-
+        <a href="site.html#inicio">Início</a>
+        <a href="site.html#projeto">O Projeto</a>
+        <a href="site.html#atividades">Atividades</a>
+        <a href="site.html#objetivos">Objetivos</a>
+        <a href="site.html#contato">Contato</a>
+        <a href="mensuracao.html">Mensuração</a>
+        <a href="coparticipacao.html">Coparticipação</a>
     </nav>
-
 </header>
 
-
 <main>
-
     <section class="page-intro">
-
-        <span class="small-title">
-            MENSURAÇÃO
-        </span>
-
         <h1>
             Acompanhar para transformar
         </h1>
 
         <p>
-            Acompanhar o desenvolvimento das crianças é uma forma de
-            compreender suas conquistas, identificar desafios e planejar
-            novas experiências de aprendizagem.
+            Os dados apresentados nos gráficos representam o acompanhamento das diferentes dimensões do
+            desenvolvimento infantil ao longo das atividades.
         </p>
-
     </section>
 
-
     <section class="evaluation">
-
         <div class="tabs">
-
             <button type="button" role="tab" aria-selected="true" class="tab active" onclick="mostrarAba('leitura', this)">
                 Leitura
             </button>
-
             <button type="button" role="tab" aria-selected="false" class="tab" onclick="mostrarAba('oralidade', this)">
                 Oralidade
             </button>
-
             <button type="button" role="tab" aria-selected="false" class="tab" onclick="mostrarAba('criatividade', this)">
                 Criatividade
             </button>
-
             <button type="button" role="tab" aria-selected="false" class="tab" onclick="mostrarAba('socioemocional', this)">
                 Socioemocional
             </button>
-
         </div>
 
-
         <div id="leitura" class="tab-content active">
-
             <h2>
                 Avaliação da Leitura
             </h2>
 
             <p>
-                Acompanhamento do desenvolvimento da compreensão,
-                interpretação e interesse pelas histórias.
+                Acompanhamento do desenvolvimento da compreensão, interpretação e interesse pelas histórias.
             </p>
 
             <div class="chart-container">
-
                 <canvas id="graficoLeitura"></canvas>
-
             </div>
-
         </div>
 
-
         <div id="oralidade" class="tab-content">
-
             <h2>
                 Avaliação da Oralidade
             </h2>
 
             <p>
-                Observação da participação, comunicação, expressão
-                de ideias e interação durante as atividades.
+                Observação da participação, comunicação, expressão de ideias e interação durante as
+                atividades.
             </p>
 
             <div class="chart-container">
-
                 <canvas id="graficoOralidade"></canvas>
-
             </div>
-
         </div>
 
-
         <div id="criatividade" class="tab-content">
-
             <h2>
                 Avaliação da Criatividade
             </h2>
 
             <p>
-                Acompanhamento da capacidade de imaginar, criar,
-                experimentar e encontrar novas possibilidades.
+                Acompanhamento da capacidade de imaginar, criar, experimentar e encontrar novas
+                possibilidades.
             </p>
 
             <div class="chart-container">
-
                 <canvas id="graficoCriatividade"></canvas>
-
             </div>
-
         </div>
 
-
         <div id="socioemocional" class="tab-content">
-
             <h2>
                 Avaliação Socioemocional
             </h2>
 
             <p>
-                Observação da autonomia, interação, cooperação,
-                expressão de sentimentos e respeito ao outro.
+                Observação da autonomia, interação, cooperação, expressão de sentimentos e respeito ao outro.
             </p>
 
             <div class="chart-container">
-
                 <canvas id="graficoSocioemocional"></canvas>
-
             </div>
-
         </div>
-
     </section>
-
-
-    <section class="section">
-
-        <div class="section-title">
-
-            <span class="small-title">
-                ACOMPANHAMENTO
-            </span>
-
-            <h2>
-                Desenvolvimento integral
-            </h2>
-
-            <p>
-                Os dados apresentados nos gráficos representam o
-                acompanhamento das diferentes dimensões do desenvolvimento
-                infantil ao longo das atividades.
-            </p>
-
-        </div>
-
-    </section>
-
 
     <div class="page-back">
-
-        <a href="site.html" class="btn">
-            ← Voltar para o início
-        </a>
-
+        <a href="site.html" class="btn">← Voltar para o início</a>
     </div>
-
 </main>
 
-
 <footer class="footer">
-
-    <div class="footer-logo">
-        Oficina de Palavras
-    </div>
-
     <p>
         Educação, criatividade e aprendizagem.
     </p>
-
-    <span>
-        © 2026 Todos os direitos reservados.
-    </span>
-
-    <span>
-        © 2026 Todos os direitos reservados.
-    </span>
-
+    <span>© 2026 Todos os direitos reservados.</span>
+    <span>© 2026 Todos os direitos reservados.</span>
 </footer>
 
-
 <script>
+    function mostrarAba(nomeAba, botaoClicado) {
+        const conteudos = document.querySelectorAll(".tab-content");
+        const botoes = document.querySelectorAll(".tab");
+        conteudos.forEach(function (conteudo) {
+            conteudo.classList.toggle("active", conteudo.id === nomeAba);
+        });
+        botoes.forEach(function (botao) {
+            const ativo = botao === botaoClicado;
+            botao.classList.toggle("active", ativo);
+            botao.setAttribute("aria-selected", ativo ? "true" : "false");
+        });
+    }
 
-function mostrarAba(nomeAba, botaoClicado) {
-    const conteudos = document.querySelectorAll(".tab-content");
-    const botoes = document.querySelectorAll(".tab");
-    conteudos.forEach(function (conteudo) {
-        conteudo.classList.toggle("active", conteudo.id === nomeAba);
-    });
-    botoes.forEach(function (botao) {
-        const ativo = botao === botaoClicado;
-        botao.classList.toggle("active", ativo);
-        botao.setAttribute("aria-selected", ativo ? "true" : "false");
-    });
-}
+    const graficoLeitura = new Chart(
+        document.getElementById("graficoLeitura"),
+        {
+            type: "bar",
 
-const graficoLeitura = new Chart(
-    document.getElementById("graficoLeitura"),
-    {
-        type: "bar",
+            data: {
+                labels: ["Compreensão", "Interpretação", "Vocabulário", "Interesse"],
 
-        data: {
-            labels: [
-                "Compreensão",
-                "Interpretação",
-                "Vocabulário",
-                "Interesse"
-            ],
+                datasets: [{
+                    label: "Desenvolvimento (%)",
 
-            datasets: [{
-                label: "Desenvolvimento (%)",
+                    data: [75, 82, 68, 90],
 
-                data: [
-                    75,
-                    82,
-                    68,
-                    90
-                ],
+                    backgroundColor: ["#4A90E2", "#5BA7E8", "#72B9F0", "#8CC8F2"],
 
-                backgroundColor: [
-                    "#4A90E2",
-                    "#5BA7E8",
-                    "#72B9F0",
-                    "#8CC8F2"
-                ],
+                    borderRadius: 8
+                }]
+            },
 
-                borderRadius: 8
-            }]
-        },
+            options: {
+                responsive: true,
 
-        options: {
-            responsive: true,
-
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 100
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
                 }
             }
         }
-    }
-);
+    );
 
+    const graficoOralidade = new Chart(
+        document.getElementById("graficoOralidade"),
+        {
+            type: "bar",
 
-const graficoOralidade = new Chart(
-    document.getElementById("graficoOralidade"),
-    {
-        type: "bar",
+            data: {
+                labels: ["Participação", "Comunicação", "Expressão", "Interação"],
 
-        data: {
-            labels: [
-                "Participação",
-                "Comunicação",
-                "Expressão",
-                "Interação"
-            ],
+                datasets: [{
+                    label: "Desenvolvimento (%)",
 
-            datasets: [{
-                label: "Desenvolvimento (%)",
+                    data: [80, 75, 85, 90],
 
-                data: [
-                    80,
-                    75,
-                    85,
-                    90
-                ],
+                    backgroundColor: ["#E88BC2", "#ED9ACB", "#F0A9D3", "#F4B9DC"],
 
-                backgroundColor: [
-                    "#E88BC2",
-                    "#ED9ACB",
-                    "#F0A9D3",
-                    "#F4B9DC"
-                ],
+                    borderRadius: 8
+                }]
+            },
 
-                borderRadius: 8
-            }]
-        },
+            options: {
+                responsive: true,
 
-        options: {
-            responsive: true,
-
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 100
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
                 }
             }
         }
-    }
-);
+    );
 
+    const graficoCriatividade = new Chart(
+        document.getElementById("graficoCriatividade"),
+        {
+            type: "bar",
 
-const graficoCriatividade = new Chart(
-    document.getElementById("graficoCriatividade"),
-    {
-        type: "bar",
+            data: {
+                labels: ["Imaginação", "Criação", "Experimentação", "Autonomia"],
 
-        data: {
-            labels: [
-                "Imaginação",
-                "Criação",
-                "Experimentação",
-                "Autonomia"
-            ],
+                datasets: [{
+                    label: "Desenvolvimento (%)",
 
-            datasets: [{
-                label: "Desenvolvimento (%)",
+                    data: [88, 80, 76, 84],
 
-                data: [
-                    88,
-                    80,
-                    76,
-                    84
-                ],
+                    backgroundColor: ["#F4C542", "#F6CE5D", "#F8D778", "#FAE090"],
 
-                backgroundColor: [
-                    "#F4C542",
-                    "#F6CE5D",
-                    "#F8D778",
-                    "#FAE090"
-                ],
+                    borderRadius: 8
+                }]
+            },
 
-                borderRadius: 8
-            }]
-        },
+            options: {
+                responsive: true,
 
-        options: {
-            responsive: true,
-
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 100
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
                 }
             }
         }
-    }
-);
+    );
 
+    const graficoSocioemocional = new Chart(
+        document.getElementById("graficoSocioemocional"),
+        {
+            type: "bar",
 
-const graficoSocioemocional = new Chart(
-    document.getElementById("graficoSocioemocional"),
-    {
-        type: "bar",
+            data: {
+                labels: ["Autonomia", "Cooperação", "Respeito", "Expressão emocional"],
 
-        data: {
-            labels: [
-                "Autonomia",
-                "Cooperação",
-                "Respeito",
-                "Expressão emocional"
-            ],
+                datasets: [{
+                    label: "Desenvolvimento (%)",
 
-            datasets: [{
-                label: "Desenvolvimento (%)",
+                    data: [78, 85, 92, 74],
 
-                data: [
-                    78,
-                    85,
-                    92,
-                    74
-                ],
+                    backgroundColor: ["#62B67A", "#75C38A", "#88CF9A", "#9DDBAA"],
 
-                backgroundColor: [
-                    "#62B67A",
-                    "#75C38A",
-                    "#88CF9A",
-                    "#9DDBAA"
-                ],
+                    borderRadius: 8
+                }]
+            },
 
-                borderRadius: 8
-            }]
-        },
+            options: {
+                responsive: true,
 
-        options: {
-            responsive: true,
-
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 100
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100
+                    }
                 }
             }
         }
-    }
-);
-
+    );
 </script>
 
 </body>
-
 </html>
